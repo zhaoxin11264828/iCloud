@@ -4,20 +4,20 @@ todo.controller('mainCtrl',['$scope',function($scope){
 	if(angular.fromJson(localStorage.todolist)){
 		$scope.todolist = angular.fromJson(localStorage.todolist);
 	}else{
-		// $scope.todolist = [
-		// {id:1001,
-		// 	name:'aabbcc',
-		// 	theme:1,
-		// 	shixiang:[
-		// 	{id:10001,
-		// 		name:'bbb',
-		// 		state:'true'}
-		// 	]}
+		$scope.todolist = [
+		{id:1001,
+			name:'aabbcc',
+			theme:1,
+			shixiang:[
+			{id:10001,
+				name:'bbb',
+				state:'true'}
+			]}
 
 
-		// ]
+		]
 
-		// localStorage.todolist = angular.toJson($scope.todolist);
+		localStorage.todolist = angular.toJson($scope.todolist);
 	}
 
 	// 保存数据到本地
